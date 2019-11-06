@@ -1,6 +1,6 @@
 ---
 
-- hosts: nodes:lb
+- hosts: helper
   gather_facts: false
   serial: "100%"
   tasks:
@@ -9,7 +9,7 @@
     vars:
       vm_state: 'poweredoff'
 
-- hosts: nodes:lb
+- hosts: helper
   gather_facts: false
   serial: "100%"
   tasks:
