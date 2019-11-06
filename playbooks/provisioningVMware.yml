@@ -1,18 +1,18 @@
 ---
 
-- hosts: nodes:lb
+- hosts: helper
   gather_facts: false
   serial: "100%"
   roles:
     - vmware_create_vm
 
-- hosts: nodes
+- hosts: helper
   gather_facts: false
   serial: "100%"
   roles:
     - vmware_add_disk
 
-- hosts: nodes:lb
+- hosts: helper
   gather_facts: false
   serial: "100%"
   tasks:
