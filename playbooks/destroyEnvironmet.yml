@@ -1,6 +1,6 @@
 ---
 
-- hosts: helper
+- hosts: helper:windows
   gather_facts: false
   serial: "100%"
   tasks:
@@ -9,7 +9,7 @@
     vars:
       vm_state: 'poweredoff'
 
-- hosts: helper
+- hosts: helper:windows
   gather_facts: false
   serial: "100%"
   tasks:
